@@ -1,53 +1,48 @@
-//ini adalah draf projek uap
-#include<iostream>
+#include <iostream>
 #include<algorithm>
-#include<conio.h>
+#include <cstring>
+#include<stack>
+#include<queue>
 #include<vector>
-#include<stdlib.h>
-#include<iomanip>
-#include<string>
+using namespace std;
 
-#define max 50
+struct data{
+    char nama[1000], usia[10], keluhan[100];
 
-vector<int> v;
-typedef struct {
-    string name[max], nik[max], kelas[max];
-    int head, tail;
-}Queue;
-Queue antrian;
-
-void create(){
-    antrian.head=antrian.tail=-1;
-}
-
-bool isempty(){
-    if(antrian.tail==-1)
-        return true;
-    else
-        return false;
-}
-
-bool isfull(){
-    if (antrian.tail==max-1) 
-        return true;
-    else
-        return false;
-}
-
-int enqueue (string nama, string nik, string kelas){
-
-    if (isempty()==true)
-    {
-        antrian.head = antrian.tail = 0;
+    data(string obat, string jenis){
+        cout << obat << "  " << jenis;
     }
     
 
+}apotek;
 
+stack<string> antri;
+queue<int> antri;
+
+
+
+int main()
+{
+    int pilih, urutan;
+    cout "\nSELAMAT DATANG DI PROGRAM APOTEK ONLINE\n\n" <<
+          "============================================\n" <<
+          "| 1. Tambah antrian pembeli          |\n" <<
+          "| 2. Panggil antrian                 |\n" <<
+          "| 3. Lihat daftar antrian Pembeli    |\n" <<
+          "| 4. Keluar                          |\n" <<
+          "============================================\n" <<
+          "Pilih : "
+          cin >> pilih;
+
+          case 1 : 
+
+              
+
+    return 0;
 }
-using namespace std ;
 
-int main(int argc, char const *argv[])
+void display()
 {
     
-    return 0;
+          
 }
