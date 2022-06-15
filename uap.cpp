@@ -11,7 +11,7 @@ int a[batas] = {2,4,5,6,7};
 void daftar(){
     
 
-    for(int i = 0; i < 5; i++){
+    for(int i = 0; i < batas; i++){
         cout<< a[i] <<"\n";
     }
 }
